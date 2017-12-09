@@ -150,4 +150,16 @@ class Options
 
         return $this;
     }
+    
+     /**
+      * Response format
+      *
+      * @param string $format Use response format
+      * @return $this
+      */
+    public function format($format)
+    {
+        $this->options['format'] = (string) $format;
+        return $this;
+    }
 }
